@@ -366,7 +366,7 @@ library OptimizedCurve {
         returns (bool)
     {
         // To disambiguate between public key solutions, include comment below.
-        if(rs[0] == 0 || rs[0] >= n || rs[1] == 0) {// || rs[1] > lowSmax)
+        if(rs[0] == 0 || rs[0] >= n || rs[1] == 0 ||rs[1] >=n) {// || rs[1] > lowSmax)
             return false;
         }
 
